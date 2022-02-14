@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-components-pipes';
+  title = 'Data Binding example';
+
+  btnDisabled: boolean = false;
+
+  onSwitchDisabled(): void {
+    this.btnDisabled = !this.btnDisabled;
+  }
 }
